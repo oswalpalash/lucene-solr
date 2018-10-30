@@ -12,6 +12,13 @@ pipeline {
                 '''
             }
         }
+        stage('Test') {
+            steps {
+                sh '''
+                ant test
+                '''
+            }
+        }
      }
      post { 
         always { 
