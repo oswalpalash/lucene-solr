@@ -14,9 +14,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh '''
-                ant test
-                '''
+                sh 'ant test "-Dtests.class=org.apache.lucene.search*"'
             }
         }
      }
