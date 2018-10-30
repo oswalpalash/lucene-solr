@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'home' }
     tools {
         ant 'ant-1.10.5'
     }
