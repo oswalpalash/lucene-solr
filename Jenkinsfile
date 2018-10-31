@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'master' }
+    agent { label 'aws_slave' }
     tools {
         ant 'ant-1.9.2'
     }
