@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'swarm' }
+    agent { label 'swarm-agent' }
     tools {
         ant 'ant-1.9.2'
     }
