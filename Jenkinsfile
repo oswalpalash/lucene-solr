@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'ant test "-Dtests.class=org.apache.lucene.search*"'
+                sh 'ant test -Dtests.jvms=1 "-Dtests.class=org.apache.lucene.search*"'
             }
         }
      }
