@@ -1,7 +1,7 @@
 pipeline {
-    agent { label 'home' }
+    agent { label 'master' }
     tools {
-        ant 'ant-1.10.5'
+        ant 'ant-1.9.2'
     }
     stages {
         stage('Build') {
